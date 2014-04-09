@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="verticalShowcase.css">
 	<link rel="stylesheet" href="imageBox.css">
 	<link rel="stylesheet" href="bookReview.css">
+	<link rel="stylesheet" href="page.css">
 	<link rel="stylesheet" href="style.css">
 	<style>
 		/*ipad:1024x768 横向*/
@@ -59,12 +60,12 @@
 		<a href="" class="logo"></a>
 		<nav class="navigator">
 			<ul>
-				<li><a href="">首页</a></li>
-				<li><a href="">连接1</a></li>
-				<li><a href="">连接2</a></li>
-				<li><a href="">连接3</a></li>
-				<li><a href="">连接4</a></li>
-				<li><a href="">连接5</a></li>
+				<li><a href="#">首页</a></li>
+				<li><a href="javascript:void(0)" data-index="1" class="link">布局1</a></li>
+				<li><a href="javascript:void(0)" data-index="2" class="link">布局2</a></li>
+				<li><a href="javascript:void(0)" data-index="3" class="link">布局3</a></li>
+				<li><a href="javascript:void(0)" data-index="4" class="link">布局4</a></li>
+				<li><a href="javascript:void(0)" data-index="5" class="link">布局5</a></li>
 			</ul>
 		</nav>
 		<div class="navigatorImg">
@@ -72,12 +73,12 @@
 				<img src="icon-hamburger.png" alt="">
 			</a>
 			<ul class="navigatorList hide">
-				<li><a href="">首页</a></li>
-				<li><a href="">连接1</a></li>
-				<li><a href="">连接2</a></li>
-				<li><a href="">连接3</a></li>
-				<li><a href="">连接4</a></li>
-				<li><a href="">连接5</a></li>
+				<li><a href="#">首页</a></li>
+				<li><a href="javascript:void(0)" data-index="1" class="link">布局1</a></li>
+				<li><a href="javascript:void(0)" data-index="2" class="link">布局2</a></li>
+				<li><a href="javascript:void(0)" data-index="3" class="link">布局3</a></li>
+				<li><a href="javascript:void(0)" data-index="4" class="link">布局4</a></li>
+				<li><a href="javascript:void(0)" data-index="5" class="link">布局5</a></li>
 			</ul>
 		</div>
 	</header>
@@ -98,7 +99,389 @@
 	</article>
 
 	<article class="container">
-		<div id="masonry" class="hide">
+		<div id="equalHeight" class="layout">
+			<div class="imgList">
+				<div class="imgItem">
+					<div class="imgItem-cover">
+						<div class="imgItem-descript textoverflow">
+							<p class="imgItem-title">这颜色真的很正</p>
+							<small class="imgItem-time">2013-7-29</small>
+						</div>
+						<div class="imgItem-opt">
+							<div class="imgItem-comment">
+								<i class="comment-btn" onselectstart="return false"></i>
+								<span class="comment-num"></span>
+							</div>
+							<div class="imgItem-praise">
+								<i class="praise-btn" onselectstart="return false"></i>
+								<span class="praise-num"></span>
+							</div>
+						</div>
+					</div>
+					<a href="">
+						<img src="images/test1.jpg" />
+					</a>
+				</div>
+				<div class="imgItem">
+					<div class="imgItem-cover">
+						<div class="imgItem-descript textoverflow">
+							<p class="imgItem-title">这颜色真的很正</p>
+							<small class="imgItem-time">2013-7-29</small>
+						</div>
+						<div class="imgItem-opt">
+							<div class="imgItem-comment">
+								<i class="comment-btn" onselectstart="return false"></i>
+								<span class="comment-num"></span>
+							</div>
+							<div class="imgItem-praise">
+								<i class="praise-btn" onselectstart="return false"></i>
+								<span class="praise-num"></span>
+							</div>
+						</div>
+					</div>
+					<a href="">
+						<img src="images/test2.jpg" />
+					</a>
+				</div>
+				<div class="imgItem">
+					<div class="imgItem-cover">
+						<div class="imgItem-descript textoverflow">
+							<p class="imgItem-title">这颜色真的很正</p>
+							<small class="imgItem-time">2013-7-29</small>
+						</div>
+						<div class="imgItem-opt">
+							<div class="imgItem-comment">
+								<i class="comment-btn" onselectstart="return false"></i>
+								<span class="comment-num"></span>
+							</div>
+							<div class="imgItem-praise">
+								<i class="praise-btn" onselectstart="return false"></i>
+								<span class="praise-num"></span>
+							</div>
+						</div>
+					</div>
+					<a href="">
+						<img src="images/test4.jpg" />
+					</a>
+				</div>
+				<div class="imgItem">
+					<div class="imgItem-cover">
+						<div class="imgItem-descript textoverflow">
+							<p class="imgItem-title">这颜色真的很正</p>
+							<small class="imgItem-time">2013-7-29</small>
+						</div>
+						<div class="imgItem-opt">
+							<div class="imgItem-comment">
+								<i class="comment-btn" onselectstart="return false"></i>
+								<span class="comment-num"></span>
+							</div>
+							<div class="imgItem-praise">
+								<i class="praise-btn" onselectstart="return false"></i>
+								<span class="praise-num"></span>
+							</div>
+						</div>
+					</div>
+					<a href="">
+						<img src="images/test1.jpg" />
+					</a>
+				</div>
+				<div class="imgItem">
+					<div class="imgItem-cover">
+						<div class="imgItem-descript textoverflow">
+							<p class="imgItem-title">这颜色真的很正</p>
+							<small class="imgItem-time">2013-7-29</small>
+						</div>
+						<div class="imgItem-opt">
+							<div class="imgItem-comment">
+								<i class="comment-btn" onselectstart="return false"></i>
+								<span class="comment-num"></span>
+							</div>
+							<div class="imgItem-praise">
+								<i class="praise-btn" onselectstart="return false"></i>
+								<span class="praise-num"></span>
+							</div>
+						</div>
+					</div>
+					<a href="">
+						<img src="images/test6.jpg" />
+					</a>
+				</div>
+				<div class="imgItem">
+					<div class="imgItem-cover">
+						<div class="imgItem-descript textoverflow">
+							<p class="imgItem-title">这颜色真的很正</p>
+							<small class="imgItem-time">2013-7-29</small>
+						</div>
+						<div class="imgItem-opt">
+							<div class="imgItem-comment">
+								<i class="comment-btn" onselectstart="return false"></i>
+								<span class="comment-num"></span>
+							</div>
+							<div class="imgItem-praise">
+								<i class="praise-btn" onselectstart="return false"></i>
+								<span class="praise-num"></span>
+							</div>
+						</div>
+					</div>
+					<a href="">
+						<img src="images/test3.jpg" />
+					</a>
+				</div>
+				<div class="imgItem">
+					<div class="imgItem-cover">
+						<div class="imgItem-descript textoverflow">
+							<p class="imgItem-title">这颜色真的很正</p>
+							<small class="imgItem-time">2013-7-29</small>
+						</div>
+						<div class="imgItem-opt">
+							<div class="imgItem-comment">
+								<i class="comment-btn" onselectstart="return false"></i>
+								<span class="comment-num"></span>
+							</div>
+							<div class="imgItem-praise">
+								<i class="praise-btn" onselectstart="return false"></i>
+								<span class="praise-num"></span>
+							</div>
+						</div>
+					</div>
+					<a href="">
+						<img src="images/test4.jpg" />
+					</a>
+				</div>
+				<div class="imgItem">
+					<div class="imgItem-cover">
+						<div class="imgItem-descript textoverflow">
+							<p class="imgItem-title">这颜色真的很正</p>
+							<small class="imgItem-time">2013-7-29</small>
+						</div>
+						<div class="imgItem-opt">
+							<div class="imgItem-comment">
+								<i class="comment-btn" onselectstart="return false"></i>
+								<span class="comment-num"></span>
+							</div>
+							<div class="imgItem-praise">
+								<i class="praise-btn" onselectstart="return false"></i>
+								<span class="praise-num"></span>
+							</div>
+						</div>
+					</div>
+					<a href="">
+						<img src="images/test2.jpg" />
+					</a>
+				</div>
+				<div class="imgItem">
+					<div class="imgItem-cover">
+						<div class="imgItem-descript textoverflow">
+							<p class="imgItem-title">这颜色真的很正</p>
+							<small class="imgItem-time">2013-7-29</small>
+						</div>
+						<div class="imgItem-opt">
+							<div class="imgItem-comment">
+								<i class="comment-btn" onselectstart="return false"></i>
+								<span class="comment-num">33</span>
+							</div>
+							<div class="imgItem-praise">
+								<i class="praise-btn" onselectstart="return false"></i>
+								<span class="praise-num">55</span>
+							</div>
+						</div>
+					</div>
+					<a href="">
+						<img src="images/test6.jpg" />
+					</a>
+				</div>
+				<div class="imgItem">
+					<div class="imgItem-cover">
+						<div class="imgItem-descript textoverflow">
+							<p class="imgItem-title">这颜色真的很正</p>
+							<small class="imgItem-time">2013-7-29</small>
+						</div>
+						<div class="imgItem-opt">
+							<div class="imgItem-comment">
+								<i class="comment-btn" onselectstart="return false"></i>
+								<span class="comment-num">33</span>
+							</div>
+							<div class="imgItem-praise">
+								<i class="praise-btn" onselectstart="return false"></i>
+								<span class="praise-num">55</span>
+							</div>
+						</div>
+					</div>
+					<a href="">
+						<img src="images/test1.jpg" />
+					</a>
+				</div>
+				<div class="imgItem">
+					<div class="imgItem-cover">
+						<div class="imgItem-descript textoverflow">
+							<p class="imgItem-title">这颜色真的很正</p>
+							<small class="imgItem-time">2013-7-29</small>
+						</div>
+						<div class="imgItem-opt">
+							<div class="imgItem-comment">
+								<i class="comment-btn" onselectstart="return false"></i>
+								<span class="comment-num"></span>
+							</div>
+							<div class="imgItem-praise">
+								<i class="praise-btn" onselectstart="return false"></i>
+								<span class="praise-num"></span>
+							</div>
+						</div>
+					</div>
+					<a href="">
+						<img src="images/test1.jpg" />
+					</a>
+				</div>
+				<div class="imgItem">
+					<div class="imgItem-cover">
+						<div class="imgItem-descript textoverflow">
+							<p class="imgItem-title">这颜色真的很正</p>
+							<small class="imgItem-time">2013-7-29</small>
+						</div>
+						<div class="imgItem-opt">
+							<div class="imgItem-comment">
+								<i class="comment-btn" onselectstart="return false"></i>
+								<span class="comment-num"></span>
+							</div>
+							<div class="imgItem-praise">
+								<i class="praise-btn" onselectstart="return false"></i>
+								<span class="praise-num"></span>
+							</div>
+						</div>
+					</div>
+					<a href="">
+						<img src="images/test4.jpg" />
+					</a>
+				</div>
+				<div class="imgItem">
+					<div class="imgItem-cover">
+						<div class="imgItem-descript textoverflow">
+							<p class="imgItem-title">这颜色真的很正</p>
+							<small class="imgItem-time">2013-7-29</small>
+						</div>
+						<div class="imgItem-opt">
+							<div class="imgItem-comment">
+								<i class="comment-btn" onselectstart="return false"></i>
+								<span class="comment-num">33</span>
+							</div>
+							<div class="imgItem-praise">
+								<i class="praise-btn" onselectstart="return false"></i>
+								<span class="praise-num">55</span>
+							</div>
+						</div>
+					</div>
+					<a href="">
+						<img src="images/test5.jpg" />
+					</a>
+				</div>
+				<div class="imgItem">
+					<div class="imgItem-cover">
+						<div class="imgItem-descript textoverflow">
+							<p class="imgItem-title">这颜色真的很正</p>
+							<small class="imgItem-time">2013-7-29</small>
+						</div>
+						<div class="imgItem-opt">
+							<div class="imgItem-comment">
+								<i class="comment-btn" onselectstart="return false"></i>
+								<span class="comment-num"></span>
+							</div>
+							<div class="imgItem-praise">
+								<i class="praise-btn" onselectstart="return false"></i>
+								<span class="praise-num"></span>
+							</div>
+						</div>
+					</div>
+					<a href="">
+						<img src="images/test3.jpg" />
+					</a>
+				</div>
+				<div class="imgItem">
+					<div class="imgItem-cover">
+						<div class="imgItem-descript textoverflow">
+							<p class="imgItem-title">这颜色真的很正</p>
+							<small class="imgItem-time">2013-7-29</small>
+						</div>
+						<div class="imgItem-opt">
+							<div class="imgItem-comment">
+								<i class="comment-btn" onselectstart="return false"></i>
+								<span class="comment-num">33</span>
+							</div>
+							<div class="imgItem-praise">
+								<i class="praise-btn" onselectstart="return false"></i>
+								<span class="praise-num">55</span>
+							</div>
+						</div>
+					</div>
+					<a href="">
+						<img src="images/test6.jpg" />
+					</a>
+				</div>
+				<div class="imgItem">
+					<div class="imgItem-cover">
+						<div class="imgItem-descript textoverflow">
+							<p class="imgItem-title">这颜色真的很正</p>
+							<small class="imgItem-time">2013-7-29</small>
+						</div>
+						<div class="imgItem-opt">
+							<div class="imgItem-comment">
+								<i class="comment-btn" onselectstart="return false"></i>
+								<span class="comment-num">33</span>
+							</div>
+							<div class="imgItem-praise">
+								<i class="praise-btn" onselectstart="return false"></i>
+								<span class="praise-num">55</span>
+							</div>
+						</div>
+					</div>
+					<a href="">
+						<img src="images/test1.jpg" />
+					</a>
+				</div>
+				<div class="imgItem">
+					<div class="imgItem-cover">
+						<div class="imgItem-descript textoverflow">
+							<p class="imgItem-title">这颜色真的很正</p>
+							<small class="imgItem-time">2013-7-29</small>
+						</div>
+						<div class="imgItem-opt">
+							<div class="imgItem-comment">
+								<i class="comment-btn" onselectstart="return false"></i>
+								<span class="comment-num"></span>
+							</div>
+							<div class="imgItem-praise">
+								<i class="praise-btn" onselectstart="return false"></i>
+								<span class="praise-num"></span>
+							</div>
+						</div>
+					</div>
+					<a href="">
+						<img src="images/test3.jpg" />
+					</a>
+				</div>
+				<div class="imgItem">
+					<div class="imgItem-cover">
+						<div class="imgItem-descript textoverflow">
+							<p class="imgItem-title">这颜色真的很正</p>
+							<small class="imgItem-time">2013-7-29</small>
+						</div>
+						<div class="imgItem-opt">
+							<div class="imgItem-comment">
+								<i class="comment-btn" onselectstart="return false"></i>
+								<span class="comment-num"></span>
+							</div>
+							<div class="imgItem-praise">
+								<i class="praise-btn" onselectstart="return false"></i>
+								<span class="praise-num"></span>
+							</div>
+						</div>
+					</div>
+					<a href="">
+						<img src="images/test4.jpg" />
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="masonry" class="layout hide">
 			<div class="opt">
 				<div class="btn all" data-type="all">all</div>
 				<div class="btn white" data-type="white">white</div>
@@ -149,7 +532,7 @@
 				</ul>
 			</div>
 		</div>
-		<div id="verticalShowcase" class="hide">
+		<div id="verticalShowcase" class="layout hide">
 			<section id="ps-container" class="ps-container">
 		
 				<div class="ps-header">
@@ -209,7 +592,7 @@
 			
 			</section><!-- /ps-container -->
 		</div>
-		<div id="imageBox" class="hide">
+		<div id="imageBox" class="layout hide">
 			<div id="ib-main-wrapper" class="ib-main-wrapper">
                 <div class="ib-main">
                     <a href="#"><img src="1.png" data-largesrc="images/large/1.jpg" alt="image01"/><span>Crabbed Age and Youth</span></a>
@@ -339,7 +722,7 @@
 				</div><!-- ib-main -->
             </div><!-- ib-main-wrapper -->
 		</div>
-		<div id="bookReview" class="hide">
+		<div id="bookReview" class="layout hide">
 			<div class="main">
 				<div id="bookshelf" class="bookshelf">
 					<figure>
@@ -931,9 +1314,7 @@
 				</nav>
 			</div><!-- /bb-custom-wrapper -->
 		</div>
-		<div id="fullPage">
-			
-		</div>
+		
 	</article>
 	<script src="jquery-1.11.0.min.js"></script>
 	<script src="bookblock.min.js"></script>
@@ -943,5 +1324,6 @@
 	<script src="jquery.kinetic.js"></script>
 	<script src="slider.js"></script>
 	<script src="base.js"></script>
+	<script src="photo.js"></script>
 </body>
 </html>

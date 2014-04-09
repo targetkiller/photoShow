@@ -5,8 +5,8 @@
 */
 
 #masonry{margin-top: 50px;margin: 0 auto;text-align: center;}
-#masonry .photoContainer{}
-#masonry .photoContainer .photoList{list-style: none;margin: 0;padding-left: 0;padding:50px;padding-top: 0px}
+#masonry .photoContainer{padding:50px;}
+#masonry .photoContainer .photoList{list-style: none;margin: 0;padding-left: 0;padding-top: 0px}
 #masonry .photoContainer .photoList li{display:inline;margin-bottom: 20px;width: 208px;}
 #masonry .photoContainer .photoList li img{width: 100%;box-shadow: 1px 1px 1px #333;}
 #masonry .photoContainer .photoList li.hide{display: none}

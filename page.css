@@ -1,0 +1,43 @@
+
+
+.imgListInit{overflow: hidden;height: 0;}
+.imgList{letter-spacing: -3px;font-size: 0px;line-height: 0px;margin: 0 auto;background-color: rgb(245,245,245);}
+.imgList .imgItem{display: inline-block;*display: inline;zoom:1;vertical-align: top;overflow: hidden;}
+.imgList .imgItem a{display: inline-block;*display: inline;zoom:1;text-decoration: none;}
+.imgList .imgItem a img{display: inline-block;*display: inline;zoom:1;}
+.imgItem{display: inline-block;position: relative;z-index: 0;}
+.imgItem-cover{position: absolute;z-index: 1;width: 100%;height: 60px;font-size: 14px;bottom: -60px;
+	color: #fff;font-family: '微软雅黑';letter-spacing: 0px;line-height: 14px;}
+.imgItem-cover .hide{display: none;}
+.imgItem:hover .imgItem-cover{display: inline-block;bottom:0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, .7)));                                                                                                                                 
+    background-image: -webkit-linear-gradient(top,transparent, rgba(0, 0, 0, .7));                                                                                                                                                            
+    background-image: -moz-linear-gradient(top,transparent, rgba(0, 0, 0, .7));
+    background-image: -o-linear-gradient(top,transparent, rgba(0, 0, 0, .7));                                                                                                                                                        
+    background-image: linear-gradient(to bottom,transparent, rgba(0, 0, 0, .7));                                              
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#B2000000',gradientType=0)";    
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#B2000000',gradientType=0);
+}
+
+.cf:before,.cf:after {content:"";display:table;}
+.cf:after { clear:both; }/* For IE 6/7 (trigger hasLayout) */
+.cf { zoom:1; }
+.imgItem-opt{display: inline-block;display: inline;*zoom:1;position: absolute;right: 15px;bottom: -60px;
+	-webkit-transition: all 0.15s ease-in;
+    -moz-transition: all 0.15s ease-in;
+    -ms-transition: all 0.15s ease-in;
+    transition: all 0.15s ease-in;}
+.imgItem:hover .imgItem-opt{bottom: 20px;}
+.imgItem-descript{display: inline-block;display: inline;*zoom:1;position: absolute;bottom: -60px;left:15px;
+	-webkit-transition: all 0.15s ease-in;
+    -moz-transition: all 0.15s ease-in;
+    -ms-transition: all 0.15s ease-in;
+    transition: all 0.15s ease-in;}
+.imgItem:hover .imgItem-descript{bottom: 10px;}
+.imgItem-title{margin-bottom: 5px;font-size: 14px;line-height: 14px;}
+.imgItem-time{line-height: 16px;font-size: 12px;}
+.imgItem-comment{margin-left: 10px;display: inline-block;display: inline;*zoom:1;}
+.imgItem-praise{display: inline-block;display: inline;*zoom:1;}
+.comment-btn,.praise-btn{display: inline-block;line-height: 16px;height: 16px;width: 16px;cursor: pointer;
+vertical-align: middle;margin-right: 3px;}
+.comment-num,.praise-num{font-size: 14px;line-height: 16px;vertical-align: middle;}

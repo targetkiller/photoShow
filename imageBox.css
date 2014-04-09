@@ -88,7 +88,7 @@ a{
     overflow: hidden;
     margin: 0px 0px 2px 2px;
     cursor: move;
-    background: #fff url(../images/thumb_bg.jpg) no-repeat center center;
+    /*background: #fff url(../images/thumb_bg.jpg) no-repeat center center;*/
     background-size: 110% 110%;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
@@ -98,7 +98,7 @@ a{
 }
 .ib-main a.ib-loading,
 .ib-main a.ib-loading:hover{
-    background: #fff url(../images/ajax-loader.gif) no-repeat center center;
+    /*background: #fff url(../images/ajax-loader.gif) no-repeat center center;*/
     background-size: 31px 31px;
 }
 .ib-main a.ib-loading img,
@@ -246,7 +246,7 @@ a{
 .ib-close{
 	top: 7px;
 	right: 7px;
-	background: transparent url(../images/close.png) no-repeat center center;
+	/*background: transparent url(../images/close.png) no-repeat center center;*/
 	position: absolute;
 	width: 24px;
 	height: 24px;
@@ -262,7 +262,7 @@ a{
     text-indent: -9000px;
     width: 60px;
     height: 60px;
-    background: #fff url(../images/ajax-loader.gif) no-repeat center center;
+    /*background: #fff url(../images/ajax-loader.gif) no-repeat center center;*/
     position: absolute;
     top: 50%;
     left: 50%;
