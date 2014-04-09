@@ -34,3 +34,17 @@ function autoBanner(){
 	$('.banner .opt .dot')[nowBannerIndex].click();
 }
 var autoBannerInterval = setInterval(function(){autoBanner()},5000);
+
+//响应式操作栏
+$('.navigatorImg .logo').click(function(){
+	var $list = $(this).siblings('.navigatorList');
+	if($list.hasClass('hide')){
+		$list.removeClass('hide');
+	}
+	else{
+		$list.addClass('hide');
+	}
+});
+
+
+

@@ -1,8 +1,41 @@
 <!doctype html>
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1,minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="blank" />
 	<title>图片展示网站</title>
 	<link rel="stylesheet" href="style.css">
+	<style>
+		/*ipad:1024x768 横向*/
+		@media (max-width: 1024px) and (orientation: landscape) {
+			.banner{height: 320px}
+		} 
+		/*ipad:1024x768 竖向*/
+		@media (max-width: 768px) and (orientation: portrait) {   
+			.banner{height: 300px}
+			.banner .img{width: 960px;height: auto;top: 0;}
+		} 
+		/*普通手机 320x480*/
+		@media (max-width: 320px) {
+			.banner{height: 260px}
+		}
+		
+		/*850*/
+		@media (max-width: 850px) {
+			.banner{height: 320px}
+			.banner .img{width: 1200px;height: auto;top: -200px;left: -200px;}
+		}
+
+		/*iphone 640x960*/
+		@media (max-width: 640px) {
+			.banner{height: 280px}
+			header{height: 30px;}
+			header .logo{height: 30px;width: 78px;top: 0px;left: 50%;-webkit-transform:translateX(-50%);}
+			.banner .img{width: 800px;height: auto;top: -150px;left: -200px;}
+			.navigator{display: none;}
+			.navigatorImg{display: block;}
+		}
+	</style>
 </head>
 <body>
 	<header>
@@ -17,6 +50,19 @@
 				<li><a href="">连接5</a></li>
 			</ul>
 		</nav>
+		<div class="navigatorImg">
+			<a href="javascript:void(0);" class="logo">
+				<img src="icon-hamburger.png" alt="">
+			</a>
+			<ul class="navigatorList hide">
+				<li><a href="">首页</a></li>
+				<li><a href="">连接1</a></li>
+				<li><a href="">连接2</a></li>
+				<li><a href="">连接3</a></li>
+				<li><a href="">连接4</a></li>
+				<li><a href="">连接5</a></li>
+			</ul>
+		</div>
 	</header>
 
 	<article class="banner">

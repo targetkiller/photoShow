@@ -10,19 +10,26 @@ body{margin: 0;}
 /*头部*/
 header{width: 100%;height: 64px;background-color: rgba(0,0,0,0.7);position: relative;z-index: 20}
 header .logo{display: inline-block;height: 50px;width: 130px;background-color: #fff;position: absolute;left: 7px;top: 7px;}
-header nav{display: inline-block;position: absolute;right: 0;top: 0;height: 64px;width: 380px}
-header nav ul{margin: 0;padding-left: 0;list-style: none;}
-header nav ul li{display: inline-block;line-height: 64px;width: 60px;}
-header nav ul li a{color: #fff;text-decoration: none;display: inline-block;text-align: center;width: 100%;-webkit-transition:all .2s ease-in;}
-header nav ul li a:hover{color: #16a085;}
+.navigator{display: inline-block;position: absolute;right: 0;top: 0;height: 64px;width: 310px}
+.navigator ul{margin: 0;padding-left: 0;list-style: none;font-size: 0;letter-spacing: -5px;}
+.navigator ul li{display: inline-block;line-height: 64px;width: 50px;letter-spacing: 0;font-size: 14px;}
+.navigator ul li a{color: #fff;text-decoration: none;display: inline-block;text-align: center;width: 100%;-webkit-transition:all .2s ease-in;}
+.navigator ul li a:hover{color: #16a085;}
+.navigatorImg{display: none;width: 30px;height: 30px;position: absolute;right: 10px;top: 0;text-align: center;}
+.navigatorImg .logo{background-color: transparent;width: 14px;height: 19px;line-height: 30px;}
+.navigatorList{display: inline-block;list-style: none;margin: 0;padding-left: 0;font-size: 0;letter-spacing: -5px;position: absolute;right: -10px;top: 30px;background-color: rgba(0,0,0,0.7);padding:5px;}
+.navigatorList li{display: inline-block;font-size: 12px;letter-spacing: 0;width: 80px;height: 25px;}
+.navigatorList li a{display: inline-block;color: #fff;text-decoration: none;width: 80px;height: 25px;line-height: 25px;}
+.navigatorList li a:hover{background-color: #555;}
 
 /*banner*/
-.banner{width: 100%;height: 380px;margin-top: -64px;overflow: hidden;position: relative;z-index: 19}
-.banner .img{width: 100%;height: auto;position: absolute;top: -120px;z-index: 19;-webkit-transition:all .2s ease-in;}
+.banner{width: 100%;height: 380px;overflow: hidden;z-index: 19;margin-top: -64px;position: relative;}
+.banner .img{width: 100%;height: auto;position: absolute;z-index: 19;-webkit-transition:all .2s ease-in;top:-120px;}
 .banner .opt{list-style: none;position: absolute;bottom: 10px;left: 50%;z-index: 20;-webkit-transform:translateX(-50%);margin:0;padding-left:0;}
 .banner .opt li{display: inline-block;height: 12px;width: 19px;}
 .banner .opt .dot{display: inline-block;height: 12px;width: 12px;border-radius: 6px;background-color: #fff;-webkit-transition:all .2s ease-in;box-shadow:1px 1px 1px #333;}
 .banner .opt .dot:hover{background-color: #333;}
 .banner .opt .active{background-color: #16a085;}
-.banner .hide{display: none;}
+
+.hide{display: none;}
 
