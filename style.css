@@ -10,22 +10,26 @@ body{margin: 0;}
 
 /*头部*/
 header{width: 100%;height: 64px;background-color: rgba(0,0,0,0.7);position: relative;z-index: 20}
-header .logo{display: inline-block;height: 50px;width: 130px;background-color: #fff;position: absolute;left: 7px;top: 7px;}
+header .mainlogo{display: inline-block;height: 30px;width: 217px;position: absolute;left: 17px;top: 17px;}
 .navigator{display: inline-block;position: absolute;right: 0;top: 0;height: 64px;width: 310px}
 .navigator ul{margin: 0;padding-left: 0;list-style: none;font-size: 0;letter-spacing: -5px;}
 .navigator ul li{display: inline-block;line-height: 64px;width: 50px;letter-spacing: 0;font-size: 14px;}
 .navigator ul li a{color: #fff;text-decoration: none;display: inline-block;text-align: center;width: 100%;-webkit-transition:all .2s ease-in;}
 .navigator ul li a:hover{color: #16a085;}
 .navigatorImg{display: none;width: 30px;height: 30px;position: absolute;right: 10px;top: 0;text-align: center;}
-.navigatorImg .logo{background-color: transparent;width: 14px;height: 19px;line-height: 30px;}
+.navigatorImg .logo{background-color: transparent;width: 14px;height: 19px;line-height: 30px;top: 2px;position: absolute;}
 .navigatorList{display: inline-block;list-style: none;margin: 0;padding-left: 0;font-size: 0;letter-spacing: -5px;position: absolute;right: -10px;top: 30px;background-color: rgba(0,0,0,0.7);padding:5px;}
 .navigatorList li{display: inline-block;font-size: 12px;letter-spacing: 0;width: 80px;height: 25px;}
 .navigatorList li a{display: inline-block;color: #fff;text-decoration: none;width: 80px;height: 25px;line-height: 25px;}
 .navigatorList li a:hover{background-color: #555;}
+header .logo2{display: none;}
 
 /*banner*/
-.banner{width: 100%;height: 380px;overflow: hidden;z-index: 19;margin-top: -64px;position: relative;}
+.banner{width: 100%;overflow: hidden;z-index: 19;margin-top: -64px;position: relative;}
+.banner .banner-link{display: inline-block;width: 100%;height: 100%;}
+.banner .txt{position: absolute;top: 44px;left: 20px;color: #fff;z-index: 20;font-size: 30px;text-shadow: 1px 1px 1px #555;}
 .banner .img{width: 100%;height: auto;position: absolute;z-index: 19;-webkit-transition:all .2s ease-in;top:-120px;}
+.banner .layout{width: 100%;height: auto;display: block;}
 .banner .opt{list-style: none;position: absolute;bottom: 10px;left: 50%;z-index: 20;-webkit-transform:translateX(-50%);margin:0;padding-left:0;}
 .banner .opt li{display: inline-block;height: 12px;width: 19px;}
 .banner .opt .dot{display: inline-block;height: 12px;width: 12px;border-radius: 6px;background-color: #fff;-webkit-transition:all .2s ease-in;box-shadow:1px 1px 1px #333;}
@@ -33,8 +37,26 @@ header .logo{display: inline-block;height: 50px;width: 130px;background-color: #
 .banner .opt .active{background-color: #16a085;}
 
 /*container*/
-.container{width: 100%;height: 100%;}
+.container{width: 100%;}
 
+.container .tips{color: #000;}
+.container .tips .box{width: 24%;padding:2% 4%;display: inline-block;text-align: left;vertical-align:top;height: 100%;}
+.container .tips .box .left{width: 15%;display: inline-block;vertical-align: top;}
+.container .tips .box .right{width: 80%;display: inline-block;vertical-align: top;}
+.container .tips .box .left .icon{color: #000;width: 100%;height: auto;}
+.container .tips .box .right h1{color: #000;height: 30px;line-height: 30px;font-size: 18px;margin: 0;}
+.container .tips .box .right p{color: #000;}
 
+.container .layoutBanner{width: 100%;}
+.container .layoutBanner .layout{font-size: 0;letter-spacing: -5px;}
+.container .layoutBanner .layout img{width: 100%;display: inline-block;font-size: 12px;letter-spacing: 0;}
+.container .layoutBanner .layout a{width: 100%;display: inline-block;height: 100%;}
+
+/*footer*/
+footer{width: 100%;height: 64px;background-color: #000;}
+footer p{text-align: center;margin: 0;color: #999;line-height: 64px}
+
+/*hide*/
+.containe.tips .hide{display: none; }
+.banner .hide{display: none;}
 .hide{display: none;}
-

@@ -1,0 +1,163 @@
+<!doctype html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1,minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+	<title>图片展示网站</title>
+	<link rel="stylesheet" href="masonry.css">
+	<link rel="stylesheet" href="verticalShowcase.css">
+	<link rel="stylesheet" href="imageBox.css">
+	<link rel="stylesheet" href="bookReview.css">
+	<link rel="stylesheet" href="page.css">
+	<link rel="stylesheet" href="style.css">
+	<style>
+		.banner{width: 100%;z-index: 19;position: relative;margin-top: 0;}
+		/*ipad:1024x768 横向*/
+		@media (max-width: 1024px) and (orientation: landscape) {
+		} 
+		/*ipad:1024x768 竖向*/
+		@media (max-width: 768px) and (orientation: portrait) {   
+			#masonry .photoContainer .photoList{list-style: none;margin: 0;padding-left: 0;padding:20px;}
+			#masonry .photoContainer .photoList li{display:inline;margin-bottom: 20px;width: 150px;}
+		} 
+		/*普通手机 320x480*/
+		@media (max-width: 320px) {
+		}
+		
+		/*850*/
+		@media (max-width: 850px) {
+		}
+
+		/*768*/
+		@media (max-width: 768px) {
+			#masonry .photoContainer .photoList{list-style: none;margin: 0;padding-left: 0;padding:20px;}
+			#masonry .photoContainer .photoList li{display:inline;margin-bottom: 20px;width: 163px;}
+		}
+
+		/*iphone 640x960*/
+		@media (max-width: 640px) {
+			header {height: 30px;}
+			header .mainlogo{display: none;}
+			header .logo2{display: block;height: 20px;width: 31px;top: 5px;left: 50%;-webkit-transform:translateX(-50%);position: absolute;}
+			.navigator{display: none;}
+			.navigatorImg{display: block;}
+			#masonry .photoContainer .photoList{list-style: none;margin: 0;padding-left: 0;padding:10px;}
+			#masonry .photoContainer .photoList li{display:inline;margin-bottom: 20px;width: 188px;}
+		}
+	</style>
+	<script src="modernizr.custom.js"></script>
+</head>
+<body>
+	<header>
+		<a href="index.html" class="mainlogo">
+			<img src="logo.png" alt="">
+		</a>
+		<nav class="navigator">
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li><a href="equalHeight.html">布局1</a></li>
+				<li><a href="masonry.html">布局2</a></li>
+				<li><a href="imageBox.html">布局3</a></li>
+				<li><a href="verticalShowcase.html">布局4</a></li>
+				<li><a href="bookReview.html">布局5</a></li>
+			</ul>
+		</nav>
+		<a href="index.html" class="logo2">
+			<img src="logo2.png" alt="">
+		</a>
+		<div class="navigatorImg">
+			<a href="javascript:void(0);" class="logo">
+				<img src="icon-hamburger.png" alt="">
+			</a>
+			<ul class="navigatorList hide">
+				<li><a href="index.html">首页</a></li>
+				<li><a href="equalHeight.html">布局1</a></li>
+				<li><a href="masonry.html">布局2</a></li>
+				<li><a href="imageBox.html">布局3</a></li>
+				<li><a href="verticalShowcase.html">布局4</a></li>
+				<li><a href="bookReview.html">布局5</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<article class="banner">
+		<img src="layout3.png" alt="" class="layout">
+	</article>
+
+	<article class="container">
+		<div id="verticalShowcase" class="layout">
+			<section id="ps-container" class="ps-container">
+		
+				<div class="ps-header">
+					<h1>Vertical Showcase Slider</h1>
+				</div><!-- /ps-header -->
+				
+				<div class="ps-contentwrapper">
+				
+					<div class="ps-content">
+						<h2>星空</h2>
+						<span class="ps-price">空</span>
+						<p>With restful springiness in the seat; prevents static sitting and provides enhanced seating comfort. Padded seat and back for enhanced seating comfort. Soft, hardwearing and easy care leather, which ages gracefully.</p>
+					</div>
+					
+					<div class="ps-content">
+						<h2>山景</h2>
+						<span class="ps-price">景</span>
+						<p>For increased stability, re-tighten the screws about two weeks after assembly. Seat and back with restful flexibility; prevents a static sitting posture and enhances comfort.</p>
+					</div>
+					
+					<div class="ps-content">
+						<h2>迷沙</h2>
+						<span class="ps-price">沙</span>
+						<p>Frame made of layer-glued bent birch; a very strong and durable material. High back provides great support for your neck. Sheepskin has natural insulating properties, which make it feel warm and cosy to sit on. Extra cushions are available for variation and renewal.</p>
+					</div>
+					
+					<div class="ps-content">
+						<h2>瀑布</h2>
+						<span class="ps-price">流</span>
+						<p>Easy to keep clean; removable, machine washable cover. Seat cushion with a top layer of memory foam; moulds to the precise contours of your body and regains its shape when you get up.</p>
+					</div>
+					
+					<div class="ps-content">
+						<h2>泰姬陵</h2>
+						<span class="ps-price">哀</span>
+						<p>Height adjustable for a comfortable sitting posture. The sloping seat gives a comfortable sitting position when leaning forwards.</p>
+					</div>
+					
+				</div><!-- /ps-contentwrapper -->
+				
+				<div class="ps-slidewrapper">
+				
+					<div class="ps-slides">
+						<div style="background-image:url(b1.jpg);"></div>
+						<div style="background-image:url(b2.jpg);"></div>
+						<div style="background-image:url(b3.jpg);"></div>
+						<div style="background-image:url(b4.jpg);"></div>
+						<div style="background-image:url(b5.jpg);"></div>
+					</div>
+					
+					<nav>
+						<a href="#" class="ps-prev" ></a>
+						<a href="#" class="ps-next" ></a>
+					</nav>
+					
+				</div><!-- /ps-slidewrapper -->
+			
+			</section><!-- /ps-container -->
+		</div>
+	</article>
+
+	<footer>
+		<p>基于HTML5的图片浏览器设计与实现／陈伟健</p>
+	</footer>		
+	<script src="jquery-1.11.0.min.js"></script>
+	<script src="bookblock.min.js"></script>
+	<!-- <script src="classie.js"></script> -->
+	<script src="bookshelf.js"></script>
+	<script src="jquery.masonry.js"></script>
+	<script src="jquery.kinetic.js"></script>
+	<script src="slider.js"></script>
+	<script src="base.js"></script>
+	<script src="photo.js"></script>
+</body>
+</html>

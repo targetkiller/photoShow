@@ -1,0 +1,154 @@
+<!doctype html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1,minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+	<title>图片展示网站</title>
+	<link rel="stylesheet" href="masonry.css">
+	<link rel="stylesheet" href="verticalShowcase.css">
+	<link rel="stylesheet" href="imageBox.css">
+	<link rel="stylesheet" href="bookReview.css">
+	<link rel="stylesheet" href="page.css">
+	<link rel="stylesheet" href="style.css">
+	<style>
+		.banner{width: 100%;z-index: 19;position: relative;margin-top: 0;}
+		/*ipad:1024x768 横向*/
+		@media (max-width: 1024px) and (orientation: landscape) {
+		} 
+		/*ipad:1024x768 竖向*/
+		@media (max-width: 768px) and (orientation: portrait) {   
+			#masonry .photoContainer .photoList{list-style: none;margin: 0;padding-left: 0;padding:20px;}
+			#masonry .photoContainer .photoList li{display:inline;margin-bottom: 20px;width: 150px;}
+		} 
+		/*普通手机 320x480*/
+		@media (max-width: 320px) {
+		}
+		
+		/*850*/
+		@media (max-width: 850px) {
+		}
+
+		/*768*/
+		@media (max-width: 768px) {
+			#masonry .photoContainer .photoList{list-style: none;margin: 0;padding-left: 0;padding:20px;}
+			#masonry .photoContainer .photoList li{display:inline;margin-bottom: 20px;width: 163px;}
+		}
+
+		/*iphone 640x960*/
+		@media (max-width: 640px) {
+			header {height: 30px;}
+			header .mainlogo{display: none;}
+			header .logo2{display: block;height: 20px;width: 31px;top: 5px;left: 50%;-webkit-transform:translateX(-50%);position: absolute;}
+			.navigator{display: none;}
+			.navigatorImg{display: block;}
+			#masonry .photoContainer .photoList{list-style: none;margin: 0;padding-left: 0;padding:10px;}
+			#masonry .photoContainer .photoList li{display:inline;margin-bottom: 20px;width: 188px;}
+		}
+	</style>
+	<script src="modernizr.custom.js"></script>
+</head>
+<body>
+	<header>
+		<a href="index.html" class="mainlogo">
+			<img src="logo.png" alt="">
+		</a>
+		<nav class="navigator">
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li><a href="equalHeight.html">布局1</a></li>
+				<li><a href="masonry.html">布局2</a></li>
+				<li><a href="imageBox.html">布局3</a></li>
+				<li><a href="verticalShowcase.html">布局4</a></li>
+				<li><a href="bookReview.html">布局5</a></li>
+			</ul>
+		</nav>
+		<a href="index.html" class="logo2">
+			<img src="logo2.png" alt="">
+		</a>
+		<div class="navigatorImg">
+			<a href="javascript:void(0);" class="logo">
+				<img src="icon-hamburger.png" alt="">
+			</a>
+			<ul class="navigatorList hide">
+				<li><a href="index.html">首页</a></li>
+				<li><a href="equalHeight.html">布局1</a></li>
+				<li><a href="masonry.html">布局2</a></li>
+				<li><a href="imageBox.html">布局3</a></li>
+				<li><a href="verticalShowcase.html">布局4</a></li>
+				<li><a href="bookReview.html">布局5</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<article class="banner">
+		<img src="layout2.png" alt="" class="layout">
+	</article>
+
+	<article class="container">
+		<div id="masonry" class="layout">
+			<div class="opt">
+				<div class="btn all" data-type="all">all</div>
+				<div class="btn white" data-type="white">white</div>
+				<div class="btn yellow" data-type="yellow">yellow</div>
+				<div class="btn red" data-type="red">red</div>
+				<div class="btn black" data-type="black">black</div>
+			</div>
+			<div class="photoContainer">
+				<ul class="photoList">
+					<li class="all red"><img src="1.png" alt=""></li>
+					<li class="all red"><img src="2.jpeg" alt=""></li>
+					<li class="all red"><img src="3.png" alt=""></li>
+					<li class="all red"><img src="4.jpeg" alt=""></li>
+					<li class="all white"><img src="5.jpeg" alt=""></li>
+					<li class="all white"><img src="6.jpeg" alt=""></li>
+					<li class="all white"><img src="7.jpeg" alt=""></li>
+					<li class="all white"><img src="8.jpeg" alt=""></li>
+					<li class="all white"><img src="9.jpeg" alt=""></li>
+					<li class="all black"><img src="10.jpeg" alt=""></li>
+					<li class="all black"><img src="11.jpeg" alt=""></li>
+					<li class="all black"><img src="12.jpeg" alt=""></li>
+					<li class="all black"><img src="13.jpeg" alt=""></li>
+					<li class="all black"><img src="14.jpeg" alt=""></li>
+					<li class="all yellow"><img src="15.jpeg" alt=""></li>
+					<li class="all yellow"><img src="16.png" alt=""></li>
+					<li class="all yellow"><img src="17.jpeg" alt=""></li>
+					<li class="all yellow"><img src="18.jpeg" alt=""></li>
+					<li class="all yellow"><img src="19.jpeg" alt=""></li>
+					<li class="all red"><img src="1.png" alt=""></li>
+					<li class="all red"><img src="2.jpeg" alt=""></li>
+					<li class="all red"><img src="3.png" alt=""></li>
+					<li class="all red"><img src="4.jpeg" alt=""></li>
+					<li class="all white"><img src="5.jpeg" alt=""></li>
+					<li class="all white"><img src="6.jpeg" alt=""></li>
+					<li class="all white"><img src="7.jpeg" alt=""></li>
+					<li class="all white"><img src="8.jpeg" alt=""></li>
+					<li class="all white"><img src="9.jpeg" alt=""></li>
+					<li class="all black"><img src="10.jpeg" alt=""></li>
+					<li class="all black"><img src="11.jpeg" alt=""></li>
+					<li class="all black"><img src="12.jpeg" alt=""></li>
+					<li class="all black"><img src="13.jpeg" alt=""></li>
+					<li class="all black"><img src="14.jpeg" alt=""></li>
+					<li class="all yellow"><img src="15.jpeg" alt=""></li>
+					<li class="all yellow"><img src="16.png" alt=""></li>
+					<li class="all yellow"><img src="17.jpeg" alt=""></li>
+					<li class="all yellow"><img src="18.jpeg" alt=""></li>
+					<li class="all yellow"><img src="19.jpeg" alt=""></li>
+				</ul>
+			</div>
+		</div>
+	</article>
+
+	<footer>
+		<p>基于HTML5的图片浏览器设计与实现／陈伟健</p>
+	</footer>
+	<script src="jquery-1.11.0.min.js"></script>
+	<script src="bookblock.min.js"></script>
+	<!-- <script src="classie.js"></script> -->
+	<script src="bookshelf.js"></script>
+	<script src="jquery.masonry.js"></script>
+	<script src="jquery.kinetic.js"></script>
+	<script src="slider.js"></script>
+	<script src="base.js"></script>
+	<script src="photo.js"></script>
+</body>
+</html>

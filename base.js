@@ -7,25 +7,25 @@ var nowBannerIndex = 0; //当前轮播图片序号
 var bannerDirector = 1; //轮播的方向
 
 // 点击显示图片展示
-$('.link').click(function() {
-	var index = $(this).attr('data-index');
-	$('.layout').addClass('hide');
-	switch(index){
-		case '1':$('#equalHeight').removeClass('hide');break;
-		case '2':$('#masonry').removeClass('hide');break;
-		case '3':$('#verticalShowcase').removeClass('hide');break;
-		case '4':$('#imageBox').removeClass('hide');break;
-		case '5':$('#bookReview').removeClass('hide');break;
-		default:$('#masonry').removeClass('hide');break;
-	}
-});
+// $('.link').click(function() {
+// 	var index = $(this).attr('data-index');
+// 	$('.layout').addClass('hide');
+// 	switch(index){
+// 		case '1':$('#equalHeight').removeClass('hide');break;
+// 		case '2':$('#masonry').removeClass('hide');break;
+// 		case '3':$('#verticalShowcase').removeClass('hide');break;
+// 		case '4':$('#imageBox').removeClass('hide');break;
+// 		case '5':$('#bookReview').removeClass('hide');break;
+// 		default:$('#masonry').removeClass('hide');break;
+// 	}
+// });
 
 // banner轮播
 $('.banner .opt .dot').click(function() {
 	var index = parseInt($(this).attr('data-index'));
 	$(this).addClass('active');
 	$(this).parent('li').siblings('li').find('.dot').removeClass('active');
-	var imgs = $('.banner .img');
+	var imgs = $('.banner .banner-link');
 	for (var i = 0; i < imgs.length; i++) {
 		if (i === index) {
 			imgs[i].classList.remove('hide');

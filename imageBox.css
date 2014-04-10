@@ -230,7 +230,7 @@ a{
     text-indent: -9000px;
 	opacity: 0.6;
 	z-index: 999;
-    background: transparent url(../images/nav.png) no-repeat top right;
+    /*background: transparent url(../images/nav.png) no-repeat top right;*/
 	right: 10px;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
