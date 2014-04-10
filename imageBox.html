@@ -44,6 +44,13 @@
 			#masonry .photoContainer .photoList{list-style: none;margin: 0;padding-left: 0;padding:10px;}
 			#masonry .photoContainer .photoList li{display:inline;margin-bottom: 20px;width: 188px;}
 		}
+
+		.bigPic{position: fixed;top: 0;left: 0;z-index: 9999;width: 100%;height: 100%;background-color: rgba(0,0,0,0.7);}
+		.bigPic img{position: absolute;top: 50%;left: 50%;-webkit-transform:translate(-50%,-50%);}
+		.bigPic .close{position: absolute;right: 20px;top: 20px;font-size: 30px;width: 40px;height: 40px;border-radius: 20px;background-color: #888;text-align: center;line-height: 40px;cursor: pointer;}
+		.bigPic .close:hover{background-color: #16a085}
+
+		.hide{display: none;}
 	</style>
 	<script src="modernizr.custom.js"></script>
 </head>
@@ -88,8 +95,8 @@
 		<div id="imageBox" class="layout">
 			<div id="ib-main-wrapper" class="ib-main-wrapper">
                 <div class="ib-main">
-                    <a href="#"><img src="1.png" data-largesrc="images/large/1.jpg" alt="image01"/><span>Crabbed Age and Youth</span></a>
-					<a href="#"><img src="2.jpeg" data-largesrc="images/large/2.jpg" alt="image02"/><span>Cannot live together</span></a>
+                    <a href="#"><img src="1.png" data-largesrc="1.png" alt="image01"/><span>Crabbed Age and Youth</span></a>
+					<a href="#"><img src="2.jpeg" data-largesrc="2.jpeg" alt="image02"/><span>Cannot live together</span></a>
 					<a href="#" class="ib-content">
                         <div class="ib-teaser">
                             <h2>Welcome <span>Howdy, Stranger</span></h2>
@@ -100,8 +107,8 @@
                             <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
                         </div>
                     </a>
-					<a href="#"><img src="3.png" data-largesrc="images/large/3.jpg" alt="image03"/><span>Youth is full of pleasance</span></a>
-					<a href="#"><img src="4.jpeg" data-largesrc="images/large/4.jpg" alt="image04"/><span>Age is full of care</span></a>
+					<a href="#"><img src="3.png" data-largesrc="3.png" alt="image03"/><span>Youth is full of pleasance</span></a>
+					<a href="#"><img src="4.jpeg" data-largesrc="4.jpeg" alt="image04"/><span>Age is full of care</span></a>
 					<a href="#" class="ib-content">
                         <div class="ib-teaser">
                             <h2>Portfolio <span>Some Works</span></h2>
@@ -112,12 +119,12 @@
                             <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
                         </div>
                     </a>
-					<a href="#"><img src="5.jpeg" data-largesrc="images/large/5.jpg" alt="image05"/><span>Youth like summer morn</span></a>
-					<a href="#"><img src="6.jpeg" data-largesrc="images/large/6.jpg" alt="image06"/><span>Age like winter weather</span></a>
-					<a href="#"><img src="7.jpeg" data-largesrc="images/large/7.jpg" alt="image07"/><span>Youth like summer brave</span></a>
-					<a href="#"><img src="8.jpeg" data-largesrc="images/large/8.jpg" alt="image08"/><span>Age like winter bare</span></a>
-					<a href="#"><img src="9.jpeg" data-largesrc="images/large/9.jpg" alt="image09"/><span>Youth is full of sports</span></a>
-					<a href="#"><img src="10.jpeg" data-largesrc="images/large/10.jpg" alt="image10"/><span>Age's breath is short</span></a>
+					<a href="#"><img src="5.jpeg" data-largesrc="5.jpeg" alt="image05"/><span>Youth like summer morn</span></a>
+					<a href="#"><img src="6.jpeg" data-largesrc="6.jpeg" alt="image06"/><span>Age like winter weather</span></a>
+					<a href="#"><img src="7.jpeg" data-largesrc="7.jpeg" alt="image07"/><span>Youth like summer brave</span></a>
+					<a href="#"><img src="8.jpeg" data-largesrc="8.jpeg" alt="image08"/><span>Age like winter bare</span></a>
+					<a href="#"><img src="9.jpeg" data-largesrc="9.jpeg" alt="image09"/><span>Youth is full of sports</span></a>
+					<a href="#"><img src="10.jpeg" data-largesrc="10.jpeg" alt="image10"/><span>Age's breath is short</span></a>
 					<a href="#" class="ib-content">
                         <div class="ib-teaser">
                             <h2>Photography <span>Professional Shots</span></h2>
@@ -128,13 +135,13 @@
                             <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
                         </div>
                     </a>
-					<a href="#"><img src="11.jpeg" data-largesrc="images/large/11.jpg" alt="image11"/><span>Youth is nimble, Age is lame</span></a>
-					<a href="#"><img src="12.jpeg" data-largesrc="images/large/12.jpg" alt="image12"/><span>Youth is hot and bold</span></a>
-					<a href="#"><img src="13.jpeg" data-largesrc="images/large/13.jpg" alt="image13"/><span>Age is weak and cold</span></a>
-					<a href="#"><img src="14.jpeg" data-largesrc="images/large/14.jpg" alt="image14"/><span>Youth is wild, and Age is tame</span></a>
-					<a href="#"><img src="15.jpeg" data-largesrc="images/large/15.jpg" alt="image15"/><span>Age, I do abhor thee</span></a>
-					<a href="#"><img src="16.png" data-largesrc="images/large/16.jpg" alt="image16"/><span>Youth, I do adore thee</span></a>
-					<a href="#"><img src="17.jpeg" data-largesrc="images/large/17.jpg" alt="image17"/><span>My Love, my Love is young</span></a>
+					<a href="#"><img src="11.jpeg" data-largesrc="11.jpeg" alt="image11"/><span>Youth is nimble, Age is lame</span></a>
+					<a href="#"><img src="12.jpeg" data-largesrc="12.jpeg" alt="image12"/><span>Youth is hot and bold</span></a>
+					<a href="#"><img src="13.jpeg" data-largesrc="13.jpeg" alt="image13"/><span>Age is weak and cold</span></a>
+					<a href="#"><img src="14.jpeg" data-largesrc="14.jpeg" alt="image14"/><span>Youth is wild, and Age is tame</span></a>
+					<a href="#"><img src="15.jpeg" data-largesrc="15.jpeg" alt="image15"/><span>Age, I do abhor thee</span></a>
+					<a href="#"><img src="16.png" data-largesrc="16.png" alt="image16"/><span>Youth, I do adore thee</span></a>
+					<a href="#"><img src="17.jpeg" data-largesrc="17.jpeg" alt="image17"/><span>My Love, my Love is young</span></a>
 					<a href="#" class="ib-content">
                         <div class="ib-teaser">
                             <h2>Web Design <span>References</span></h2>
@@ -145,14 +152,14 @@
                             <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
                         </div>
                     </a>
-					<a href="#"><img src="18.jpeg" data-largesrc="images/large/18.jpg" alt="image18"/><span>Age, I do defy thee</span></a>
-					<a href="#"><img src="19.jpeg" data-largesrc="images/large/19.jpg" alt="image19"/><span>O sweet shepherd, hie thee</span></a>
-					<a href="#"><img src="20.jpg" data-largesrc="images/large/20.jpg" alt="image20"/><span>For methinks thou stay'st too long</span></a>
-					<a href="#"><img src="21.jpg" data-largesrc="images/large/21.jpg" alt="image21"/><span>The Phoenix and the Turtle</span></a>
-					<a href="#"><img src="22.jpg" data-largesrc="images/large/22.jpg" alt="image22"/><span>Let the bird of loudest lay</span></a>
-					<a href="#"><img src="23.jpg" data-largesrc="images/large/23.jpg" alt="image23"/><span>On the sole Arabian tree</span></a>
-					<a href="#"><img src="24.jpg" data-largesrc="images/large/24.jpg" alt="image24"/><span>Herald sad and trumpet be</span></a>
-					<a href="#"><img src="25.jpg" data-largesrc="images/large/25.jpg" alt="image25"/><span>To whose sound chaste wings obey</span></a>
+					<a href="#"><img src="18.jpeg" data-largesrc="18.jpeg" alt="image18"/><span>Age, I do defy thee</span></a>
+					<a href="#"><img src="19.jpeg" data-largesrc="19.jpeg" alt="image19"/><span>O sweet shepherd, hie thee</span></a>
+					<a href="#"><img src="20.jpg" data-largesrc="20.jpg" alt="image20"/><span>For methinks thou stay'st too long</span></a>
+					<a href="#"><img src="21.jpg" data-largesrc="21.jpg" alt="image21"/><span>The Phoenix and the Turtle</span></a>
+					<a href="#"><img src="22.jpg" data-largesrc="22.jpg" alt="image22"/><span>Let the bird of loudest lay</span></a>
+					<a href="#"><img src="23.jpg" data-largesrc="23.jpg" alt="image23"/><span>On the sole Arabian tree</span></a>
+					<a href="#"><img src="24.jpg" data-largesrc="24.jpg" alt="image24"/><span>Herald sad and trumpet be</span></a>
+					<a href="#"><img src="25.jpg" data-largesrc="25.jpg" alt="image25"/><span>To whose sound chaste wings obey</span></a>
 					<a href="#" class="ib-content">
                         <div class="ib-teaser">
                             <h2>Blog <span>Just some thoughts</span></h2>
@@ -163,15 +170,15 @@
                             <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
                         </div>
                     </a>
-					<a href="#"><img src="26.jpg" data-largesrc="images/large/26.jpg" alt="image26"/><span>But thou shrieking harbinger</span></a>
-					<a href="#"><img src="27.jpg" data-largesrc="images/large/27.jpg" alt="image27"/><span>Foul precurrer of the fiend</span></a>
-					<a href="#"><img src="28.jpg" data-largesrc="images/large/28.jpg" alt="image28"/><span>Augur of the fever's end</span></a>
-					<a href="#"><img src="1.png" data-largesrc="images/large/1.jpg" alt="image01"/><span>Crabbed Age and Youth</span></a>
-					<a href="#"><img src="2.jpeg" data-largesrc="images/large/2.jpg" alt="image02"/><span>Cannot live together</span></a>
-					<a href="#"><img src="3.png" data-largesrc="images/large/3.jpg" alt="image03"/><span>Youth is full of pleasance</span></a>
-					<a href="#"><img src="4.jpeg" data-largesrc="images/large/4.jpg" alt="image04"/><span>Age is full of care</span></a>
-					<a href="#"><img src="5.jpeg" data-largesrc="images/large/5.jpg" alt="image05"/><span>Youth like summer morn</span></a>
-					<a href="#"><img src="6.jpeg" data-largesrc="images/large/6.jpg" alt="image06"/><span>Age like winter weather</span></a>
+					<a href="#"><img src="26.jpg" data-largesrc="26.jpg" alt="image26"/><span>But thou shrieking harbinger</span></a>
+					<a href="#"><img src="27.jpg" data-largesrc="27.jpg" alt="image27"/><span>Foul precurrer of the fiend</span></a>
+					<a href="#"><img src="28.jpg" data-largesrc="28.jpg" alt="image28"/><span>Augur of the fever's end</span></a>
+					<a href="#"><img src="1.png" data-largesrc="1.png" alt="image01"/><span>Crabbed Age and Youth</span></a>
+					<a href="#"><img src="2.jpeg" data-largesrc="2.jpeg" alt="image02"/><span>Cannot live together</span></a>
+					<a href="#"><img src="3.png" data-largesrc="3.png" alt="image03"/><span>Youth is full of pleasance</span></a>
+					<a href="#"><img src="4.jpeg" data-largesrc="4.jpeg" alt="image04"/><span>Age is full of care</span></a>
+					<a href="#"><img src="5.jpeg" data-largesrc="5.jpeg" alt="image05"/><span>Youth like summer morn</span></a>
+					<a href="#"><img src="6.jpeg" data-largesrc="6.jpeg" alt="image06"/><span>Age like winter weather</span></a>
 					<a href="#" class="ib-content">
                         <div class="ib-teaser">
                             <h2>Want more?<span>Curious stuff</span></h2>
@@ -182,25 +189,25 @@
                             <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
                         </div>
                     </a>
-					<a href="#"><img src="7.jpeg" data-largesrc="images/large/7.jpg" alt="image07"/><span>Youth like summer brave</span></a>
-					<a href="#"><img src="8.jpeg" data-largesrc="images/large/8.jpg" alt="image08"/><span>Age like winter bare</span></a>
-					<a href="#"><img src="9.jpeg" data-largesrc="images/large/9.jpg" alt="image09"/><span>Youth is full of sports</span></a>
-					<a href="#"><img src="10.jpeg" data-largesrc="images/large/10.jpg" alt="image10"/><span>Age's breath is short</span></a>
-					<a href="#"><img src="11.jpeg" data-largesrc="images/large/11.jpg" alt="image11"/><span>Youth is nimble, Age is lame</span></a>
-					<a href="#"><img src="12.jpeg" data-largesrc="images/large/12.jpg" alt="image12"/><span>Youth is hot and bold</span></a>
-					<a href="#"><img src="13.jpeg" data-largesrc="images/large/13.jpg" alt="image13"/><span>Age is weak and cold</span></a>
-					<a href="#"><img src="14.jpeg" data-largesrc="images/large/14.jpg" alt="image14"/><span>Youth is wild, and Age is tame</span></a>
-					<a href="#"><img src="15.jpeg" data-largesrc="images/large/15.jpg" alt="image15"/><span>Age, I do abhor thee</span></a>
-					<a href="#"><img src="16.png" data-largesrc="images/large/16.jpg" alt="image16"/><span>Youth, I do adore thee</span></a>
-					<a href="#"><img src="17.jpeg" data-largesrc="images/large/17.jpg" alt="image17"/><span>My Love, my Love is young</span></a>
-					<a href="#"><img src="18.jpeg" data-largesrc="images/large/18.jpg" alt="image18"/><span>Age, I do defy thee</span></a>
-					<a href="#"><img src="19.jpeg" data-largesrc="images/large/19.jpg" alt="image19"/><span>O sweet shepherd, hie thee</span></a>
-					<a href="#"><img src="20.jpg" data-largesrc="images/large/20.jpg" alt="image20"/><span>For methinks thou stay'st too long</span></a>
-					<a href="#"><img src="21.jpg" data-largesrc="images/large/21.jpg" alt="image21"/><span>The Phoenix and the Turtle</span></a>
-					<a href="#"><img src="22.jpg" data-largesrc="images/large/22.jpg" alt="image22"/><span>Let the bird of loudest lay</span></a>
-					<a href="#"><img src="23.jpg" data-largesrc="images/large/23.jpg" alt="image23"/><span>On the sole Arabian tree</span></a>
-					<a href="#"><img src="24.jpg" data-largesrc="images/large/24.jpg" alt="image24"/><span>Herald sad and trumpet be</span></a>
-					<a href="#"><img src="25.jpg" data-largesrc="images/large/25.jpg" alt="image25"/><span>To whose sound chaste wings obey</span></a>
+					<a href="#"><img src="7.jpeg" data-largesrc="7.jpeg" alt="image07"/><span>Youth like summer brave</span></a>
+					<a href="#"><img src="8.jpeg" data-largesrc="8.jpeg" alt="image08"/><span>Age like winter bare</span></a>
+					<a href="#"><img src="9.jpeg" data-largesrc="9.jpeg" alt="image09"/><span>Youth is full of sports</span></a>
+					<a href="#"><img src="10.jpeg" data-largesrc="10.jpeg" alt="image10"/><span>Age's breath is short</span></a>
+					<a href="#"><img src="11.jpeg" data-largesrc="11.jpeg" alt="image11"/><span>Youth is nimble, Age is lame</span></a>
+					<a href="#"><img src="12.jpeg" data-largesrc="12.jpeg" alt="image12"/><span>Youth is hot and bold</span></a>
+					<a href="#"><img src="13.jpeg" data-largesrc="13.jpeg" alt="image13"/><span>Age is weak and cold</span></a>
+					<a href="#"><img src="14.jpeg" data-largesrc="14.jpeg" alt="image14"/><span>Youth is wild, and Age is tame</span></a>
+					<a href="#"><img src="15.jpeg" data-largesrc="15.jpeg" alt="image15"/><span>Age, I do abhor thee</span></a>
+					<a href="#"><img src="16.png" data-largesrc="16.png" alt="image16"/><span>Youth, I do adore thee</span></a>
+					<a href="#"><img src="17.jpeg" data-largesrc="17.jpeg" alt="image17"/><span>My Love, my Love is young</span></a>
+					<a href="#"><img src="18.jpeg" data-largesrc="18.jpeg" alt="image18"/><span>Age, I do defy thee</span></a>
+					<a href="#"><img src="19.jpeg" data-largesrc="19.jpeg" alt="image19"/><span>O sweet shepherd, hie thee</span></a>
+					<a href="#"><img src="20.jpg" data-largesrc="20.jpg" alt="image20"/><span>For methinks thou stay'st too long</span></a>
+					<a href="#"><img src="21.jpg" data-largesrc="21.jpg" alt="image21"/><span>The Phoenix and the Turtle</span></a>
+					<a href="#"><img src="22.jpg" data-largesrc="22.jpg" alt="image22"/><span>Let the bird of loudest lay</span></a>
+					<a href="#"><img src="23.jpg" data-largesrc="23.jpg" alt="image23"/><span>On the sole Arabian tree</span></a>
+					<a href="#"><img src="24.jpg" data-largesrc="24.jpg" alt="image24"/><span>Herald sad and trumpet be</span></a>
+					<a href="#"><img src="25.jpg" data-largesrc="25.jpg" alt="image25"/><span>To whose sound chaste wings obey</span></a>
 					<a href="#" class="ib-content">
                         <div class="ib-teaser">
                             <h2>Credits <span>Done by Codrops</span></h2>
@@ -214,20 +221,476 @@
 					<div class="clr"></div>
 				</div><!-- ib-main -->
             </div><!-- ib-main-wrapper -->
-		</div>
+		</div>	
 	</article>
+	
+	<!-- 大图 -->
+	<div class="bigPic hide">
+	 	<img src="2.jpeg" alt="" />
+	 	<div class="close">X</div>
+	</div>
 
 	<footer>
 		<p>基于HTML5的图片浏览器设计与实现／陈伟健</p>
 	</footer>
-	<script src="jquery-1.11.0.min.js"></script>
-	<script src="bookblock.min.js"></script>
+	<!-- <script src="jquery-1.11.0.min.js"></script> -->
+	<!-- <script src="bookblock.min.js"></script> -->
 	<!-- <script src="classie.js"></script> -->
-	<script src="bookshelf.js"></script>
-	<script src="jquery.masonry.js"></script>
-	<script src="jquery.kinetic.js"></script>
-	<script src="slider.js"></script>
+	<!-- <script src="bookshelf.js"></script> -->
+	<!-- <script src="jquery.masonry.js"></script> -->
+	<!-- <script src="slider.js"></script> -->
+	<script src="jquery.min.js"></script>
 	<script src="base.js"></script>
-	<script src="photo.js"></script>
+	<script type="text/javascript" src="jquery.tmpl.min.js"></script>
+    <script type="text/javascript" src="jquery.kinetic.js"></script>
+	<script type="text/javascript" src="jquery.easing.1.3.js"></script>
+	<script type="text/javascript">
+            $(function() {
+			
+				var $ibWrapper	= $('#ib-main-wrapper'),
+				 
+					Template	= (function() {
+							
+							// true if dragging the container
+						var kinetic_moving				= false,
+							// current index of the opened item
+							current						= -1,
+							// true if the item is being opened / closed
+							isAnimating					= false,
+							// items on the grid
+							$ibItems					= $ibWrapper.find('div.ib-main > a'),
+							// image items on the grid
+							$ibImgItems					= $ibItems.not('.ib-content'),
+							// total image items on the grid
+							imgItemsCount				= $ibImgItems.length,
+							init						= function() {
+								
+								// add a class ib-image to the image items
+								$ibImgItems.addClass('ib-image');
+								// apply the kinetic plugin to the wrapper
+								loadKinetic();
+								// load some events
+								initEvents();
+						
+							},
+							loadKinetic					= function() {
+								
+								setWrapperSize();
+								
+								$ibWrapper.kinetic({
+									moved	: function() {
+										
+										kinetic_moving = true;
+										
+									},
+									stopped	: function() {
+										
+										kinetic_moving = false;
+										
+									}
+								});
+								
+							},
+							setWrapperSize				= function() {
+								
+								var containerMargins	= $('#ib-top').outerHeight(true) + $('#header').outerHeight(true) + parseFloat( $ibItems.css('margin-top') );
+								$ibWrapper.css( 'height', $(window).height() - containerMargins )
+								
+							},
+							initEvents					= function() {
+							
+								// open the item only if not dragging the container
+								$ibItems.bind('click.ibTemplate', function( event ) {
+									
+									if( !kinetic_moving )
+										openItem( $(this) );
+								
+									return false;	
+								
+								});
+								
+								// on window resize, set the wrapper and preview size accordingly
+								$(window).bind('resize.ibTemplate', function( event ) {
+									
+									setWrapperSize();
+									
+									$('#ib-img-preview, #ib-content-preview').css({
+										width	: $(window).width(),
+										height	: $(window).height()
+									})
+									
+								});
+							
+							},
+							openItem					= function( $item ) {
+								
+								if( isAnimating ) return false;
+								
+								// if content item
+								if( $item.hasClass('ib-content') ) {
+									
+									isAnimating	= true;
+									current	= $item.index('.ib-content');
+									loadContentItem( $item, function() { isAnimating = false; } );
+									
+								}
+								// if image item
+								else {
+								
+									isAnimating	= true;
+									current	= $item.index('.ib-image');
+									loadImgPreview( $item, function() { isAnimating = false; } );
+									
+								}
+								
+							},
+							// opens one image item (fullscreen)
+							loadImgPreview				= function( $item, callback ) {
+								
+								var largeSrc		= $item.children('img').data('largesrc'),
+									description		= $item.children('span').text(),
+									largeImageData	= {
+										src			: largeSrc,
+										description	: description
+									};
+								
+								// preload large image
+								$item.addClass('ib-loading');
+								
+								preloadImage( largeSrc, function() {
+									
+									$item.removeClass('ib-loading');
+									
+									var hasImgPreview	= ( $('#ib-img-preview').length > 0 );
+									
+									if( !hasImgPreview )
+										$('#previewTmpl').tmpl(largeImageData).insertAfter($ibWrapper);
+									else
+										$('#ib-img-preview').children('img.ib-preview-img')
+												      .attr( 'src', largeSrc ).end()
+												      .find('span.ib-preview-descr')
+												      .text( description );
+										
+									//get dimentions for the image, based on the windows size
+									var	dim	= getImageDim( largeSrc );
+									
+									$item.removeClass('ib-img-loading');
+									
+									//set the returned values and show/animate preview
+									$('#ib-img-preview').css({
+										width	: $item.width(),
+										height	: $item.height(),
+										left	: $item.offset().left,
+										top		: $item.offset().top
+									}).children('img.ib-preview-img').hide().css({
+										width	: dim.width,
+										height	: dim.height,
+										left	: dim.left,
+										top		: dim.top
+									}).fadeIn( 400 ).end().show().animate({
+										width	: $(window).width(),
+										left	: 0
+									}, 500, 'easeOutExpo', function() {
+									
+										$(this).animate({
+											height	: $(window).height(),
+											top		: 0
+										}, 400, function() {
+										
+											var $this	= $(this);
+											$this.find('span.ib-preview-descr, span.ib-close').show()
+											if( imgItemsCount > 1 )
+												$this.find('div.ib-nav').show();
+												
+											if( callback ) callback.call();
+										
+										});
+									
+									});
+									
+									if( !hasImgPreview )
+										initImgPreviewEvents();
+									
+								} );
+								
+							},
+							// opens one content item (fullscreen)
+							loadContentItem				= function( $item, callback ) {
+								
+								var hasContentPreview	= ( $('#ib-content-preview').length > 0 ),
+									teaser				= $item.children('div.ib-teaser').html(),
+									content				= $item.children('div.ib-content-full').html(),
+									contentData			= {
+										teaser		: teaser,
+										content		: content
+									};
+									
+								if( !hasContentPreview )
+									$('#contentTmpl').tmpl( contentData ).insertAfter( $ibWrapper );
+									
+								//set the returned values and show/animate preview
+								$('#ib-content-preview').css({
+									width	: $item.width(),
+									height	: $item.height(),
+									left	: $item.offset().left,
+									top		: $item.offset().top
+								}).show().animate({
+									width	: $(window).width(),
+									left	: 0
+								}, 500, 'easeOutExpo', function() {
+								
+									$(this).animate({
+										height	: $(window).height(),
+										top		: 0
+									}, 400, function() {
+										
+										var $this	= $(this),
+											$teaser	= $this.find('div.ib-teaser'),
+											$content= $this.find('div.ib-content-full'),
+											$close	= $this.find('span.ib-close');
+											
+										if( hasContentPreview ) {
+											$teaser.html( teaser )
+											$content.html( content )
+										}
+									
+										$teaser.show();
+										$content.show();
+										$close.show();
+										
+										if( callback ) callback.call();
+									
+									});
+								
+								});
+								
+								if( !hasContentPreview )
+									initContentPreviewEvents();	
+								
+							},
+							// preloads an image
+							preloadImage				= function( src, callback ) {
+							
+								$('<img/>').load(function(){
+								
+									if( callback ) callback.call();
+								
+								}).attr( 'src', src );
+							
+							},
+							// load the events for the image preview : navigation ,close button, and window resize
+							initImgPreviewEvents		= function() {
+							
+								var $preview	= $('#ib-img-preview');
+								
+								$preview.find('span.ib-nav-prev').bind('click.ibTemplate', function( event ) {
+									
+									navigate( 'prev' );
+									
+								}).end().find('span.ib-nav-next').bind('click.ibTemplate', function( event ) {
+									
+									navigate( 'next' );
+									
+								}).end().find('span.ib-close').bind('click.ibTemplate', function( event ) {
+									
+									closeImgPreview();
+									
+								});
+								
+								//resizing the window resizes the preview image
+								$(window).bind('resize.ibTemplate', function( event ) {
+									
+									var $largeImg	= $preview.children('img.ib-preview-img'),
+										dim			= getImageDim( $largeImg.attr('src') );
+									
+									$largeImg.css({
+										width	: dim.width,
+										height	: dim.height,
+										left	: dim.left,
+										top		: dim.top
+									})
+									
+								});
+								
+							},
+							// load the events for the content preview : close button
+							initContentPreviewEvents	= function() {
+							
+								$('#ib-content-preview').find('span.ib-close').bind('click.ibTemplate', function( event ) {
+									
+									closeContentPreview();
+									
+								});
+								
+							},
+							// navigate the image items in fullscreen mode
+							navigate					= function( dir ) {
+								
+								if( isAnimating ) return false;
+								
+								isAnimating		= true;
+								
+								var $preview	= $('#ib-img-preview'),
+									$loading	= $preview.find('div.ib-loading-large');
+								
+								$loading.show();
+								
+								if( dir === 'next' ) {
+									
+									( current === imgItemsCount - 1 ) ? current	= 0 : ++current;
+									
+								}
+								else if( dir === 'prev' ) {
+									
+									( current === 0 ) ? current	= imgItemsCount - 1 : --current;
+									
+								}
+								
+								var $item		= $ibImgItems.eq( current ),
+									largeSrc	= $item.children('img').data('largesrc'),
+									description	= $item.children('span').text();
+									
+								preloadImage( largeSrc, function() {
+									
+									$loading.hide();
+									
+									//get dimentions for the image, based on the windows size
+									var	dim	= getImageDim( largeSrc );
+									
+									$preview.children('img.ib-preview-img')
+												    .attr( 'src', largeSrc )
+													.css({
+										width	: dim.width,
+										height	: dim.height,
+										left	: dim.left,
+										top		: dim.top
+													})
+													.end()
+													.find('span.ib-preview-descr')
+													.text( description );
+									
+									$ibWrapper.scrollTop( $item.offset().top )
+											  .scrollLeft( $item.offset().left );
+									
+									isAnimating	= false;
+									
+								});
+								
+							},
+							// closes the fullscreen image item
+							closeImgPreview				= function() {
+							
+								if( isAnimating ) return false;
+								
+								isAnimating	= true;
+								
+								var $item	= $ibImgItems.eq( current );
+								
+								$('#ib-img-preview').find('span.ib-preview-descr, div.ib-nav, span.ib-close')
+												.hide()
+												.end()
+												.animate({
+													height	: $item.height(),
+													top		: $item.offset().top
+													}, 500, 'easeOutExpo', function() {
+													
+													$(this).animate({
+														width	: $item.width(),
+														left	: $item.offset().left
+														}, 400, function() {
+														
+															$(this).fadeOut(function() {isAnimating	= false;});
+														
+													} );
+												
+												});
+							
+							},
+							// closes the fullscreen content item
+							closeContentPreview			= function() {
+								
+								if( isAnimating ) return false;
+								
+								isAnimating	= true;
+								
+								var $item	= $ibItems.not('.ib-image').eq( current );
+								
+								$('#ib-content-preview').find('div.ib-teaser, div.ib-content-full, span.ib-close')
+														.hide()
+														.end()
+														.animate({
+															height	: $item.height(),
+															top		: $item.offset().top
+														}, 500, 'easeOutExpo', function() {
+															
+															$(this).animate({
+																width	: $item.width(),
+																left	: $item.offset().left
+															}, 400, function() {
+																
+																$(this).fadeOut(function() {isAnimating	= false;});
+																
+															} );
+														
+														});
+							
+							},
+							// get the size of one image to make it full size and centered
+							getImageDim					= function( src ) {
+								
+								var img     	= new Image();
+								img.src     	= src;
+								
+								var w_w	= $(window).width(),
+									w_h	= $(window).height(),
+									r_w	= w_h / w_w,
+									i_w	= img.width,
+									i_h	= img.height,
+									r_i	= i_h / i_w,
+									new_w, new_h,
+									new_left, new_top;
+								
+								if( r_w > r_i ) {
+								
+									new_h	= w_h;
+									new_w	= w_h / r_i;
+								
+								}	
+								else {
+								
+									new_h	= w_w * r_i;
+									new_w	= w_w;
+								
+								}
+								
+								return {
+									width	: new_w,
+									height	: new_h,
+									left	: (w_w - new_w) / 2,
+									top		: (w_h - new_h) / 2
+								};
+							
+							};
+						
+						return { init : init };
+						
+					})();
+				
+				Template.init();
+				
+            });
+    </script>
+    <script>
+    $('.ib-main img').click(function(){
+    	if($('.bigPic').hasClass('hide')){
+    		$('.bigPic').removeClass('hide');
+    	}
+    });
+
+    $('.bigPic .close').click(function(event) {
+    	$('.bigPic').addClass('hide');
+    });
+    </script>
+	<!-- <script src="photo.js"></script> -->
 </body>
 </html>
