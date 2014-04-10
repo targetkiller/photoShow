@@ -682,6 +682,8 @@
     </script>
     <script>
     $('.ib-main img').click(function(){
+    	var src = $(this).attr('src');
+   		$('.bigPic img').attr('src',src);
     	if($('.bigPic').hasClass('hide')){
     		$('.bigPic').removeClass('hide');
     	}
